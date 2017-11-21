@@ -17,7 +17,7 @@
 			<div class="card">
 			  <div class="card-body">
 			  		<p class="card-text">
-			  			Url:<a href="{{ url($post->slug) }}"> {{ url($post->slug) }}</a>
+			  			Url:<a href="{{ route('blog.single', $post->slug) }}"> {{ route('blog.single', $post->slug) }}</a>
 			  		</p>
 			  		<p class="card-text">
 			  			Created @ {{ date('M j, Y h:i A', strtotime($post->created_at)) }}
